@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to Your Platform</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e0eff6 35%, #74b8c9);
+        }
+
+        .wrapper {
+            width: 100svw;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100svh;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5.5px);
+            -webkit-backdrop-filter: blur(5.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+
+        .container {
+            width: 375px;
+            height: 667px;
+            background: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .header img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-code img {
+            width: 130px;
+        }
+
+        .platforms {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+            overflow-y: auto;
+            max-height: 300px;
+        }
+
+        .platform {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .platform img {
+            width: 80%;
+            height: auto;
+        }
+
+        .apple {
+            background-image: url('./Apple-TV-IOS-logo.jpg');
+        }
+        
+        .netflix{
+            background-image: url('./netflix-logo.jpg');
+            
+        }
+
+        .hbo{
+            background-image: url('./hbo-logo.jpeg');
+        }
+        
+        .amazon{
+            background-image: url('./amazon prime.jpg');
+        }
+        
+        .disney{
+            background-image: url('./disneyplus-logo.webp');
+        }
+
+        .cinema-city{
+            background-image: url('./cinema-city.png');
+        }
+
+        .logo {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-attachment: local;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="header">
+                <a href="/form.html">
+                    <img src="back.svg" alt="Back Icon">
+                </a>
+                <span>connect to your platform</span>
+            </div>
+            <div class="qr-code">
+                <img src="qr.svg" alt="QR Code">
+            </div>
+            <div>scan to connect</div>
+            <div>or choose your platform</div>
+            <div class="platforms">
+                <div class="platform logo cinema-city">
+                </div>
+                <div class="platform logo hot">
+                    <img src="hot-logo.svg" alt="HOT">
+                </div>
+                <div class="platform logo disney">
+                </div>
+                <div class="platform">
+                    <img src="youtube-logo.webp" alt="YouTube Premium">
+                </div>
+                <div class="platform logo apple">
+                    <!-- <img src="" alt="Apple TV+"> -->
+                </div>
+                <div class="platform amazon logo">
+                    <!-- <img src="" alt="Prime Video"> -->
+                </div>
+                <div class="platform logo netflix">
+                    <!-- <img src="" alt="Netflix"> -->
+                </div>
+                <div class="platform logo hbo">
+                    <!-- <img src="" alt="HBO Max"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

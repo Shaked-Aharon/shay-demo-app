@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Ability Login</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e0eff6 35%, #74b8c9);
+        }
+        
+        .wrapper {
+            width: 100svw;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100svh;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5.5px);
+            -webkit-backdrop-filter: blur(5.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .container {
+            width: 375px;
+            height: 667px;
+            border-radius: 30px;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .spacer{
+            flex: 1;
+        }
+
+        .logo img {
+            width: 180px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .btn {
+            display: block;
+            width: 80%;
+            padding: 15px;
+            margin: 10px auto;
+            border: none;
+            border-radius: 30px;
+            font-size: 1em;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-facebook {
+            background-color: #3b5998;
+        }
+
+        .btn-google {
+            background-color: #db4437;
+        }
+
+        .btn-apple {
+            background-color: #000000;
+        }
+
+        .btn-password {
+            background-color: #7f8c8d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Wave Ability Logo">
+            </div>
+            <div class="subtitle">Let's you in</div>
+            <button class="btn btn-facebook">Continue with Facebook</button>
+            <button class="btn btn-google">Continue with Google</button>
+            <button class="btn btn-apple">Continue with Apple</button>
+            <span class="spacer"></span>
+            <a href="/form.html">
+                <button class="btn btn-password">Sign up with your password</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
